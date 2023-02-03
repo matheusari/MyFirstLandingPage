@@ -1,7 +1,7 @@
 <h1 align="center"> MyFirstLandingPage 1️⃣ </h1>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/114448911/216652292-9fe0e2ae-e1c0-418b-a2dd-9ed78ad14a9d.png" height="220px" width="430px">
+  <img src="https://user-images.githubusercontent.com/114448911/216652292-9fe0e2ae-e1c0-418b-a2dd-9ed78ad14a9d.png">
 </div>
 
 <h3 align="center"> 🇧🇷 </h3>
