@@ -1,0 +1,160 @@
+/* Para fazer o "link" entre CSS e HTML, precisamos indicar, no arquivo HTML, as classes que criarmos aqui. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* O asterisco com as chaves serve para "reiniciar o CSS" e não termos 
+configurações pré-definidas */
+* {
+  margin: 0; /* Distância do conteúdo a conteúdo */
+  padding: 0; /* Distância do conteúdo ao rodapé da página */
+  box-sizing: border-box;
+  text-decoration: none; /* Tirando qualquer decoração que possa haver no texto */
+}
+
+body {
+  font-size: 100%;
+  background: #000000;
+}
+
+/* A partir daqui iremos importar as classes do HTML */
+
+.cabecalho {
+  display: flex; /* Importando Flexbox. Guia: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  flex-direction: row; /* indica o sentido dos itens no cabeçalho. No caso, em direção de linha */
+  align-items: center; /* indica o alinhamento dos itens */
+  justify-content: space-between; /* indica a posição dos itens */
+  padding: 20px; /* Margem */
+}
+
+.cabecalho_imagem {
+  height: 79px; /* altura */
+  width: 79px; /* largura */
+}
+
+.cabecalho_menu {
+  display: flex;
+  gap: 15px; /* Distância entre todos os elementos na tag */
+}
+
+.menu_cabecalho_item {
+  /* Informações da fonte - Retiradas no Figma. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 15px;
+  color: #c8c8c8;
+}
+
+.conteudo {
+  border-top: 0.4px solid #4b4b4b; /* Linha entre o cabeçalho e o conteúdo. */
+  margin-bottom: 48px;
+}
+
+.conteudo_principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.conteudo_principal_texto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.conteudo_principal_textoCorinthians {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: justify;
+  color: #ffffff;
+  width: 500px;
+  height: 191px;
+}
+
+.conteudo_principal_botao {
+  background-color: #4b4b4b;
+  width: 152px;
+  height: 43px;
+  border: none; /* Tirando a borda pré-definida */
+  border-radius: 20px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.conteudo_principal_imagem {
+  width: 451px;
+  height: 387px;
+}
+
+.conteudo_secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.conteudo_secundario_texto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteudo_secundario_textoCorinthians {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  padding-bottom: 40px;
+  color: #ffffff;
+}
+
+.conteudo_secundario_botao {
+  background-color: #4b4b4b;
+  width: 152px;
+  height: 43px;
+  border: none; /* Tirando a borda pré-definida */
+  border-radius: 20px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.rodape {
+  border-top: 0.4px solid #4b4b4b;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rodape_endereco {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #d2d2d2;
+}
